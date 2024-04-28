@@ -26,5 +26,34 @@
  */
 
 string task03(int a, int b, int c) {
-	return "";
+
+	if (a > b) {
+		if (b > c) {
+			int temp = c;
+			c = a;
+			a = temp;
+		}
+		else {
+			int temp = b;
+			b = a;
+			a = temp;
+			temp = c;
+			c = b;
+			b = temp;
+		}
+	}
+	else if (a > c) {
+		int temp = c;
+		c = a;
+		a = temp;
+	}
+	if (b > c) {
+		int temp = c;
+		c = b;
+		b = temp;
+	}
+
+	string result = to_string(a) + " " + to_string(b) + " " + to_string(c);
+	
+	return result;
 }
