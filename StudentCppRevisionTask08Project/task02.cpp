@@ -21,5 +21,10 @@
  */
 
 int task02(int a, int b, int c, int d) {
-	return 0;
+	int result = a;
+	result = result > b ? b : result;
+	result = result > c ? c : result;
+	result = result > d ? d : result;
+
+	return result;
 }
