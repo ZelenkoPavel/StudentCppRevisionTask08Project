@@ -33,6 +33,6 @@
  *	[output 4]: false
  */
 
-bool task03(int x, int y, int z, int a, int b, int c) {
+bool taskX(int x, int y, int z, int a, int b, int c) {
 	return false;
 }
