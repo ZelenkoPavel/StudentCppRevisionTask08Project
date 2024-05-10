@@ -34,5 +34,13 @@
  */
 
 bool taskX(int x, int y, int z, int a, int b, int c) {
-	return false;
+	if (x < 0 || y < 0 || z < 0 || a < 0 || b < 0 || c < 0) {
+		return false;
+	}
+	
+	return x <= a && y <= b && z <= c
+		|| x <= c && y <= a && z <= b
+		|| x <= b && y <= c && z <= a
+		|| x <= c && y <= b && z <= a
+		|| x <= b && y <= a && z <= c;
 }
